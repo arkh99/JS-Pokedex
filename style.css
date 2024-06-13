@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.pokemon:hover {
+    transform: translateY(-5px);
+}
+
+.pokemon.caught {
+    background-color: #ffc107;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+dialog {
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+dialog h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+dialog img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+dialog p {
+    margin: 10px 0;
+}
+
+dialog button {
+    margin: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: #0056b3;
+}
+
+#more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#more-btn:hover {
+    background-color: #218838;
+}
+
+.caught-pokemon-list {
+    margin-top: 20px;
+}
+
+.release-btn {
+    background-color: #dc3545 !important;
+}
+
+.release-btn:hover {
+    background-color: #c82333 !important;
+}
